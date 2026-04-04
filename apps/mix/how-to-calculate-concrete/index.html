@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Calculate How Much Concrete You Need — Northbound Apps</title>
+  <meta name="description" content="Learn how to calculate concrete volume, bags, and mix ratios for slabs, footings, columns, and steps. Includes the formulas and a free Android calculator app.">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Calculate How Much Concrete You Need",
+    "description": "Calculate concrete volume and bag count for slabs, footings, columns, and steps.",
+    "step": [
+      { "@type": "HowToStep", "name": "Measure your dimensions", "text": "Measure length, width, and depth of your pour in inches or feet." },
+      { "@type": "HowToStep", "name": "Calculate volume in cubic feet", "text": "Multiply length × width × depth, then divide by 12 if any measurement was in inches." },
+      { "@type": "HowToStep", "name": "Convert to cubic yards", "text": "Divide cubic feet by 27 to get cubic yards — the standard unit for ordering concrete." },
+      { "@type": "HowToStep", "name": "Calculate bag count", "text": "Divide total cubic feet by the yield per bag (0.45 ft³ for 60 lb bags, 0.60 ft³ for 80 lb bags). Add 10% for waste." }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <p class="back-link"><a href="/apps/mix">← Mix – Concrete Calculator</a></p>
+    <h1>How to Calculate How Much Concrete You Need</h1>
+    <p>Whether you're pouring a driveway slab, a footing, or a set of steps, the math is the same: volume first, then bags. Here's how to do it by hand — and how to skip all of it with the <a href="/apps/mix">Mix app</a>.</p>
+
+    <div class="app-description">
+
+      <h2>Rectangular slab</h2>
+      <p>Multiply length × width × depth to get cubic inches, then convert:</p>
+      <ul style="margin: 0 0 1rem 1.5rem;">
+        <li>Divide by 1,728 to get cubic feet</li>
+        <li>Divide by 27 to get cubic yards</li>
+      </ul>
+      <p><strong>Example:</strong> A 10 ft × 12 ft slab at 4 inches (0.33 ft) deep = 10 × 12 × 0.33 = 39.6 cubic feet = 1.47 cubic yards.</p>
+
+      <h2>Round slab or column base</h2>
+      <p>Use the cylinder formula: π × r² × depth, where r is the radius (half the diameter).</p>
+      <p><strong>Example:</strong> A round pad 3 ft across and 6 inches deep — radius = 1.5 ft, depth = 0.5 ft. Volume = 3.14159 × 1.5² × 0.5 = 3.53 cubic feet.</p>
+
+      <h2>Footing</h2>
+      <p>A footing is a rectangular slab, usually narrow and deep. Use the same length × width × depth formula. For a continuous footing, add up all the runs before multiplying.</p>
+
+      <h2>Concrete steps</h2>
+      <p>Steps are the most tedious to calculate by hand because each tread is a different layer. The standard approach: treat each step as a rectangular slab (tread depth × width × height of that riser and all risers below it), then sum the volumes. Most free concrete calculators don't include steps — <a href="/apps/mix">Mix does</a>.</p>
+
+      <h2>How many bags do you need?</h2>
+      <p>Once you have cubic feet, divide by the yield per bag:</p>
+      <ul style="margin: 0 0 1rem 1.5rem;">
+        <li>40 lb bag → 0.30 ft³</li>
+        <li>60 lb bag → 0.45 ft³</li>
+        <li>80 lb bag → 0.60 ft³</li>
+      </ul>
+      <p>Always add at least 10% for waste and overage. For a 1.5 yd³ pour with 80 lb bags: 1.5 × 27 = 40.5 ft³ ÷ 0.60 = 68 bags × 1.10 = 75 bags.</p>
+
+      <h2>Concrete mix ratios</h2>
+      <p>Standard residential concrete uses a 1:2:3 mix — 1 part cement, 2 parts sand, 3 parts gravel by weight. Stronger mixes (like M25 or M30) use less water and more cement. Mix grades M10–M50 follow Indian standard notation; the number is the compressive strength in MPa at 28 days.</p>
+      <p>For most DIY pours — slabs, footings, posts — a 4,000 PSI (roughly M25) bagged mix is appropriate. For steps or structural elements, go M30 or higher.</p>
+
+      <h2>Skip the math</h2>
+      <p>The <a href="/apps/mix">Mix – Concrete Calculator app for Android</a> handles all five shapes (slab, round slab, footing, column, steps), lets you select a mix grade or enter a custom ratio, and shows you bag count, material breakdown, and estimated cost in one tap. It's free.</p>
+      <p><a class="btn-store" href="https://play.google.com/store/apps/details?id=com.moonsailsoftware.mix" target="_blank" rel="noopener">Get Mix on Google Play</a></p>
+
+    </div>
+  </main>
+  <footer>
+    <a href="/privacy">Privacy Policy</a> &middot; <a href="/cookies">Cookie Policy</a>
+  </footer>
+</body>
+</html>
