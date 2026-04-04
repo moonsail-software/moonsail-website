@@ -27,20 +27,17 @@ footer {
   color: #666;
 }
 
-nav {
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.9rem;
+.back-link {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
 }
 
-nav a {
-  color: #555;
+.back-link a {
+  color: #888;
   text-decoration: none;
 }
 
-nav a:hover {
+.back-link a:hover {
   color: #0066cc;
 }
 
@@ -78,32 +75,23 @@ nav a:hover {
   margin: 0;
 }
 
-.app-hero {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-  margin-top: 1.5rem;
-}
-
-.app-hero img {
-  width: 200px;
+.app-screenshot {
+  display: block;
+  width: 130px;
+  margin: 1.5rem auto;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-  flex-shrink: 0;
 }
 
-.app-hero-content {
-  flex: 1;
-}
-
-.app-hero-content h1 {
-  margin-bottom: 0.5rem;
-}
-
-.app-hero-content .tagline {
-  font-size: 1rem;
+.tagline {
   color: #444;
+  text-align: center;
   margin-bottom: 1.25rem;
+}
+
+p:has(> .btn-store) {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .btn-store {
@@ -135,12 +123,3 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 540px) {
-  .app-hero {
-    flex-direction: column;
-  }
-
-  .app-hero img {
-    width: 160px;
-  }
-}
