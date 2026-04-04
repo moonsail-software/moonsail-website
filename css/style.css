@@ -26,3 +26,121 @@ footer {
   font-size: 0.875rem;
   color: #666;
 }
+
+nav {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0066cc;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.app-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.15s;
+}
+
+.app-card:hover {
+  border-color: #0066cc;
+}
+
+.app-card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.app-card p {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0;
+}
+
+.app-hero {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.app-hero img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.app-hero-content {
+  flex: 1;
+}
+
+.app-hero-content h1 {
+  margin-bottom: 0.5rem;
+}
+
+.app-hero-content .tagline {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.25rem;
+}
+
+.btn-store {
+  display: inline-block;
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-store:hover {
+  background: #0052a3;
+  color: #fff;
+}
+
+.app-description {
+  margin-top: 2.5rem;
+}
+
+.app-description h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 540px) {
+  .app-hero {
+    flex-direction: column;
+  }
+
+  .app-hero img {
+    width: 160px;
+  }
+}
