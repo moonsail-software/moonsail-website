@@ -6,6 +6,7 @@
   <title>Mix – Concrete Calculator App for Android — Northbound Apps</title>
   <meta name="description" content="Free concrete calculator app for Android. Calculate mix ratios, bag counts, and volume for slabs, footings, columns, and steps. No account required.">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/animations.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,31 +26,42 @@
 </head>
 <body>
   <main>
-    <p class="back-link"><a href="/apps">← Apps</a></p>
-    <h1>Mix – Concrete Calculator</h1>
-    <img class="app-screenshot" src="/apps/mix/screenshot.png" alt="Mix concrete calculator app showing slab volume, bag count, and mix ratio results on Android" width="130">
-    <p class="tagline">Calculate concrete mix ratios, bag counts, and volume for five shapes — fast and free. No subscription, no account required.</p>
-    <p><a class="btn-store" href="https://play.google.com/store/apps/details?id=com.moonsailsoftware.mix" target="_blank" rel="noopener">Get it on Google Play</a></p>
+    <p class="back-link hidden-on-scroll"><a href="/">← Home</a></p>
+    <h1 class="hidden-on-scroll">Mix – Concrete Calculator</h1>
+    <img class="app-screenshot hidden-on-scroll" src="/apps/mix/screenshot.png" alt="Mix concrete calculator app showing slab volume, bag count, and mix ratio results on Android" width="130">
+    <p class="tagline hidden-on-scroll">Calculate concrete mix ratios, bag counts, and volume for five shapes — fast and free. No subscription, no account required.</p>
+    <p class="hidden-on-scroll"><a class="btn-store" href="https://play.google.com/store/apps/details?id=com.moonsailsoftware.mix" target="_blank" rel="noopener">Get it on Google Play</a></p>
 
     <div class="app-description">
-      <h2>What it calculates</h2>
-      <p>Mix handles five shape types on one screen: rectangular slab, round slab, footing, column, and steps. Enter dimensions and results appear instantly. Whether you're pouring a driveway pad, a round column base, a foundation footing, or a concrete staircase, it's all in one place.</p>
-      <p>Steps calculations are a genuine gap in free concrete calculator apps — most stop at slabs and footings. Mix includes them, so you can estimate a staircase pour like anything else.</p>
+      <div class="hidden-on-scroll">
+        <h2>What it calculates</h2>
+        <p>Mix handles five shape types on one screen: rectangular slab, round slab, footing, column, and steps. Enter dimensions and results appear instantly. Whether you're pouring a driveway pad, a round column base, a foundation footing, or a concrete staircase, it's all in one place.</p>
+        <p>Steps calculations are a genuine gap in free concrete calculator apps — most stop at slabs and footings. Mix includes them, so you can estimate a staircase pour like anything else.</p>
+      </div>
 
-      <h2>Concrete mix calculator</h2>
-      <p>Mix is a full concrete mix design calculator, not just a volume tool. Select a mix grade from M10 to M50, or enter a custom mix ratio for your specific job. For each grade, you get the complete material breakdown: cement, sand, gravel, and water — calculated for the exact volume you're pouring.</p>
-      <p>Bag count is calculated for your pour alongside the full material breakdown. Enter a price per cubic yard and Mix adds an estimated cost to your results.</p>
+      <div class="hidden-on-scroll">
+        <h2>Concrete mix calculator</h2>
+        <p>Mix is a full concrete mix design calculator, not just a volume tool. Select a mix grade from M10 to M50, or enter a custom mix ratio for your specific job. For each grade, you get the complete material breakdown: cement, sand, gravel, and water — calculated for the exact volume you're pouring.</p>
+        <p>Bag count is calculated for your pour alongside the full material breakdown. Enter a price per cubic yard and Mix adds an estimated cost to your results.</p>
+      </div>
 
-      <h2>How to use it</h2>
-      <p>Select a shape. Enter your dimensions — a labeled diagram shows which measurement goes where, so there's no guessing which field is "length" vs. "depth." Choose a mix grade or type in a custom ratio. Set your waste factor (default 10%) and an optional price per cubic yard. Tap Calculate to see your results. Save any calculation to your history and reload it from the saved calculations sheet.</p>
+      <div class="hidden-on-scroll">
+        <h2>How to use it</h2>
+        <p>Select a shape. Enter your dimensions — a labeled diagram shows which measurement goes where, so there's no guessing which field is "length" vs. "depth." Choose a mix grade or type in a custom ratio. Set your waste factor (default 10%) and an optional price per cubic yard. Tap Calculate to see your results. Save any calculation to your history and reload it from the saved calculations sheet.</p>
+      </div>
 
-      <h2>Units</h2>
-      <p>Mix works in both imperial and metric. Imperial outputs concrete volume in cubic yards and cubic feet. Metric outputs cubic meters and uses kg bag sizes. Switch between them with a single tap at the top of the screen.</p>
-      <h2>Learn more</h2>
-      <p><a href="/apps/mix/how-to-calculate-concrete">How to calculate how much concrete you need</a> — a guide to the math behind slab, footing, and column pours.</p>
+      <div class="hidden-on-scroll">
+        <h2>Units</h2>
+        <p>Mix works in both imperial and metric. Imperial outputs concrete volume in cubic yards and cubic feet. Metric outputs cubic meters and uses kg bag sizes. Switch between them with a single tap at the top of the screen.</p>
+      </div>
+      
+      <div class="hidden-on-scroll">
+        <h2>Learn more</h2>
+        <p><a href="/apps/mix/how-to-calculate-concrete">How to calculate how much concrete you need</a> — a guide to the math behind slab, footing, and column pours.</p>
+      </div>
     </div>
   </main>
-  <footer>
+  <footer class="hidden-on-scroll">
     <a href="/privacy">Privacy Policy</a> &middot; <a href="/cookies">Cookie Policy</a>
   </footer>
 </body>

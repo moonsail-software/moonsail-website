@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#bc13fe" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Moon (Moved left to avoid overlap with sail) -->
+  <path d="M60 40C40 40 20 55 20 80C20 105 40 120 60 120C50 115 45 100 45 80C45 60 50 45 60 40Z" 
+        stroke="url(#neonGradient)" stroke-width="2" filter="url(#glow)" />
+  
+  <!-- Ship Mast & Sail -->
+  <path d="M80 140L80 60" stroke="url(#neonGradient)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M80 70C110 70 130 100 130 130L80 130Z" 
+        stroke="url(#neonGradient)" stroke-width="2" fill="rgba(188, 19, 254, 0.1)" filter="url(#glow)" />
+  
+  <!-- Ship Hull -->
+  <path d="M40 140L120 140L110 160H50L40 140Z" 
+        stroke="url(#neonGradient)" stroke-width="2.5" fill="rgba(0, 243, 255, 0.05)" filter="url(#glow)" />
+  
+  <!-- Waves -->
+  <path d="M30 175Q50 165 70 175T110 175T150 175" 
+        stroke="url(#neonGradient)" stroke-width="1.5" stroke-opacity="0.5" filter="url(#glow)" />
+</svg>

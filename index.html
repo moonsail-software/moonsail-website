@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moonsail Software</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/animations.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>Moonsail Software</h1>
-    <p>We build Android apps.</p>
-    <p><a href="/apps">Browse our apps →</a></p>
-    <p>Contact: <a href="mailto:dev@moonsailsoftware.com">dev@moonsailsoftware.com</a></p>
+  <main style="text-align: center;">
+    <div class="hidden-on-scroll logo-container">
+      <img src="img/logo.svg" alt="Moonsail Software Neon Ship Logo" width="160" height="160" style="margin-bottom: -1.5rem;">
+    </div>
+    <h1 class="hidden-on-scroll">Moonsail Software</h1>
+    <p class="hidden-on-scroll">We build Android apps.</p>
+    
+    <div class="app-grid">
+      <a class="app-card hidden-on-scroll" href="/apps/mix">
+        <h2>Mix – Concrete Calculator</h2>
+        <p>Concrete mix calculator — slabs, steps, footings, columns. Bags &amp; volume.</p>
+      </a>
+    </div>
+
+    <p class="hidden-on-scroll" style="margin-top: 3rem;">Contact: <a href="mailto:dev@moonsailsoftware.com">dev@moonsailsoftware.com</a></p>
   </main>
-  <footer>
+  <footer class="hidden-on-scroll">
     <a href="/privacy">Privacy Policy</a> &middot; <a href="/cookies">Cookie Policy</a>
   </footer>
 </body>
