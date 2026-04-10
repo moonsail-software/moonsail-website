@@ -220,7 +220,130 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-visual {
+  flex: 0 0 200px;
+}
+
+.hero-visual .app-screenshot {
+  margin: 0;
+  width: 100%;
+}
+
+.hero-section h1 {
+  text-align: left;
+}
+
+.hero-section .tagline {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--neon-purple);
+  transform: translateY(-4px);
+}
+
+.feature-card h3 {
+  color: var(--neon-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 6rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 3px solid var(--neon-blue);
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.bottom-cta {
+  text-align: center;
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at center, rgba(0, 243, 255, 0.05) 0%, transparent 70%);
+  border-radius: 24px;
+}
+
+.bottom-cta h2 {
+  margin-bottom: 1.5rem;
+}
+
 /* Media Queries */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-section h1, .hero-section .tagline {
+    text-align: center;
+  }
+  .hero-visual {
+    flex: 0 0 auto;
+    width: 160px;
+  }
+}
+
 @media (max-width: 600px) {
   h1 { font-size: 2.2rem; }
   main { padding: 3rem 1.2rem; }
