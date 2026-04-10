@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://moonsailsoftware.com/apps/timer/how-to-use-multiple-timers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://moonsailsoftware.com/eye-break/privacy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
