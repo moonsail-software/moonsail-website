@@ -5,9 +5,9 @@ Static site for moonsailsoftware.com, hosted via GitHub Pages.
 ## Local Development
 To view the site locally, run:
 ```bash
-npx --yes serve .
+npx --yes serve -p 3001 .
 ```
-Then visit `http://localhost:3000`.
+Then visit `http://localhost:3001`.
 
 ## Rules
 Never push without confirmation first. 
