@@ -46,6 +46,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://moonsailsoftware.com/bp-log/privacy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://moonsailsoftware.com/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
