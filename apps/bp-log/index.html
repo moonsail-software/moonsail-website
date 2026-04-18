@@ -25,12 +25,15 @@
   <script src="/js/analytics.js" type="module"></script>
   <style>
     .gallery-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    @media (max-width: 600px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .gallery-grid .gallery-item:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+      max-width: calc(50% - 0.75rem);
+      margin: 0 auto;
     }
     .coming-soon-badge {
       display: inline-block;
@@ -140,6 +143,10 @@
         </div>
       </div>
     </section>
+
+    <div class="hidden-on-scroll" style="margin-top: 4rem; text-align: center;">
+      <p><a href="/apps/bp-log/how-to-keep-a-blood-pressure-log">Read our guide to keeping a blood pressure log →</a></p>
+    </div>
 
     <div class="bottom-cta hidden-on-scroll">
       <h2>Know your numbers</h2>
