@@ -4,32 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moonsail Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Outfit:wght@600;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/animations.js" defer></script>
   <script src="/js/analytics.js" type="module"></script>
 </head>
 <body>
+  <nav class="site-nav">
+    <a class="nav-logo" href="/">Moonsail Software</a>
+    <div class="nav-links">
+      <a href="/apps/mix">Mix</a>
+      <a href="/apps/timer">Timer</a>
+      <a href="/apps/eye-break">Eye Break</a>
+      <a href="/apps/bp-log">BP Log</a>
+    </div>
+  </nav>
   <main style="text-align: center;">
     <div class="hidden-on-scroll logo-container">
-      <img src="img/logo.svg" alt="Moonsail Software Neon Ship Logo" width="160" height="160" style="margin-bottom: -1.5rem;">
+      <img src="img/moonsail-logo.png" alt="Moonsail Software Logo" style="width: min(520px, 90vw); height: auto; display: block; margin: 0 auto;">
     </div>
-    <h1 class="hidden-on-scroll">Moonsail Software</h1>
-    <p class="hidden-on-scroll">We build Android apps.</p>
-    
+    <p class="hidden-on-scroll">Small, focused Android utilities. No fluff, no subscriptions.</p>
+
     <div class="app-grid">
-      <a class="app-card hidden-on-scroll" href="/apps/mix">
+      <a class="app-card hidden-on-scroll" href="/apps/mix" data-accent="amber">
         <h2>Mix – Concrete Calculator</h2>
         <p>Concrete mix calculator — slabs, steps, footings, columns. Bags &amp; volume.</p>
       </a>
-      <a class="app-card hidden-on-scroll" href="/apps/timer">
+      <a class="app-card hidden-on-scroll" href="/apps/timer" data-accent="emerald">
         <h2>Multi Timer – Fast Countdowns</h2>
         <p>Run and monitor multiple simultaneous countdowns with one tap. Fast, simple, and free.</p>
       </a>
-      <a class="app-card hidden-on-scroll" href="/apps/eye-break">
+      <a class="app-card hidden-on-scroll" href="/apps/eye-break" data-accent="sky">
         <h2>20-20-20: Eye Break Reminder</h2>
         <p>Protect your eyes with automatic 20-20-20 rule reminders, active hours, and guided break countdowns.</p>
       </a>
-      <a class="app-card hidden-on-scroll" href="/apps/bp-log">
+      <a class="app-card hidden-on-scroll" href="/apps/bp-log" data-accent="rose">
         <h2>BP Log: Easy Blood Pressure</h2>
         <p>Log blood pressure readings with a tactile wheel, get instant AHA classifications, and track trends with charts. Coming soon.</p>
       </a>
@@ -39,10 +50,10 @@
       <a href="/apps/eye-break/why-the-20-20-20-rule-works">Read our guide to the 20-20-20 rule for computer eye strain</a>
     </p>
 
-    <p class="hidden-on-scroll" style="margin-top: 3rem;">Contact: <a href="mailto:dev@moonsailsoftware.com">dev@moonsailsoftware.com</a></p>
   </main>
   <footer class="hidden-on-scroll">
-    <a href="/privacy">Privacy Policy</a> &middot; <a href="/cookies">Cookie Policy</a>
+    <p>© 2026 Moonsail Software LLC · <a href="mailto:dev@moonsailsoftware.com">dev@moonsailsoftware.com</a></p>
+    <p><a href="/privacy">Privacy Policy</a> &middot; <a href="/cookies">Cookie Policy</a></p>
   </footer>
 </body>
 </html>
