@@ -18,6 +18,9 @@ const analytics = getAnalytics(app);
 document.addEventListener('DOMContentLoaded', () => {
   const storeButtons = document.querySelectorAll('.btn-store');
   storeButtons.forEach(button => {
+    if (!(button instanceof HTMLAnchorElement) || !button.href) {
+      return;
+    }
     button.addEventListener('click', () => {
       logEvent(analytics, 'select_content', {
         content_type: 'play_store_link',

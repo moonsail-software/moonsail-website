@@ -95,7 +95,9 @@ body::after {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links a {
@@ -192,6 +194,7 @@ a:hover {
 .app-card[data-accent="emerald"] { --card-accent: #10b981; }
 .app-card[data-accent="sky"] { --card-accent: #38bdf8; }
 .app-card[data-accent="rose"] { --card-accent: #fb7185; }
+.app-card[data-accent="mint"] { --card-accent: #6ee7b7; }
 
 .app-card::before {
   content: "";
@@ -267,6 +270,14 @@ a:hover {
   box-shadow: 0 6px 20px rgba(188, 19, 254, 0.4);
   text-shadow: none;
   color: #fff !important;
+}
+
+.btn-store-disabled,
+.btn-store-disabled:hover {
+  cursor: default;
+  transform: none;
+  box-shadow: 0 4px 15px rgba(0, 243, 255, 0.25);
+  text-shadow: none;
 }
 
 .tagline {
@@ -497,6 +508,10 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .site-nav {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -511,6 +526,8 @@ footer p {
   }
   .nav-links {
     gap: 1rem;
+    width: 100%;
+    justify-content: flex-start;
   }
   .nav-links a {
     font-size: 0.8rem;
