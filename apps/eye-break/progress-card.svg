@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="512" viewBox="0 0 288 512" role="img" aria-labelledby="title desc">
+  <title id="title">Track your progress</title>
+  <desc id="desc">Eye Break progress screen showing consistency tracking and today's break totals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#57d2df"/>
+      <stop offset="100%" stop-color="#1356b8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0c214b" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="screen-clip">
+      <rect x="48" y="96" width="192" height="368" rx="28"/>
+    </clipPath>
+  </defs>
+  <rect width="288" height="512" fill="url(#bg)"/>
+  <text x="144" y="48" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    Track your progress
+  </text>
+  <g filter="url(#shadow)">
+    <rect x="40" y="88" width="208" height="384" rx="34" fill="#4b4d59"/>
+    <rect x="44" y="92" width="200" height="376" rx="32" fill="#40424d"/>
+    <rect x="48" y="96" width="192" height="368" rx="28" fill="#18151f"/>
+    <image href="/apps/eye-break/progress-screen.png" x="48" y="96" width="192" height="416.001" preserveAspectRatio="xMidYMin slice" clip-path="url(#screen-clip)"/>
+    <ellipse cx="144" cy="478" rx="88" ry="8" fill="#153a78" opacity="0.28"/>
+  </g>
+</svg>
