@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — GhostCode</title>
+  <link rel="stylesheet" href="/css/policy.css">
+  <script src="/js/analytics.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <div class="back-link"><a href="https://moonsailsoftware.com">&larr; moonsailsoftware.com</a></div>
+
+    <h1>Privacy Policy</h1>
+    <p><strong>GhostCode</strong><br>
+    Moonsail Software LLC<br>
+    Last updated: May 2, 2026</p>
+
+    <p>This Privacy Policy explains how GhostCode ("the App", "we", "us") collects, uses, and protects your information.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">1. No Account Required</h2>
+
+    <p>GhostCode does not require an account, login, email address, or registration of any kind. We have no way to identify you as an individual.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">2. Information We Collect</h2>
+
+    <p><strong>Message Content and Encryption Keys</strong><br>
+    Your message plaintext and saved encryption keys never leave your device. All encryption and decryption happens locally. We never receive, store, or have access to your plaintext or your keys.</p>
+
+    <p><strong>Attestation and Verification Data</strong><br>
+    Creating or opening a Protected QR code requires a network request to our Verification Backend. As part of this request, the App collects a device integrity token from Google Play Integrity API (Android) or Apple App Attest (iOS). This token is sent to our backend to verify that you are running a genuine, unmodified copy of GhostCode on a non-compromised device. The backend stores short-lived, anonymous audit records (rate-limiting counters, attestation results, entitlement state) that contain no plaintext, no key material, and no personally identifying information. These records are automatically deleted within hours to days.</p>
+
+    <p><strong>Analytics and Crash Reporting</strong><br>
+    The App uses Google Firebase Analytics to collect anonymized usage data such as screen views and feature interactions, and Firebase Crashlytics to collect crash reports. Firebase may collect device identifiers, IP address, and general device information. This data is used to understand how the App is used and to improve it. This collection is governed by Google's privacy policy.</p>
+
+    <p><strong>Advertising Data</strong><br>
+    The free version of the App uses Google AdMob to serve ads. AdMob may collect your device's advertising identifier (Android Advertising ID or iOS IDFA), IP address, and other device information to serve personalized or non-personalized ads. When Ghost Mode is active, all ad requests are blocked at the application level. This collection is governed by Google's privacy policy.</p>
+
+    <p><strong>In-App Purchases</strong><br>
+    If you purchase Ghost Mode or the ad-removal upgrade, the transaction is processed entirely by Google Play (Android) or the App Store (iOS). We receive only a confirmation of the purchase; we do not receive your payment details.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">3. Permissions</h2>
+
+    <p>The App requests only the permissions necessary to function:</p>
+    <ul style="margin:0 0 1rem 1.5rem;">
+      <li style="margin-bottom:0.5rem;"><strong>Camera</strong> — required to scan QR codes.</li>
+      <li style="margin-bottom:0.5rem;"><strong>Storage / Photo Library</strong> — required to read and save images for steganography.</li>
+      <li style="margin-bottom:0.5rem;"><strong>Biometric / Device Credentials</strong> — optional, used only if you enable the app lock feature. Biometric data is processed entirely by the operating system and never leaves your device.</li>
+      <li style="margin-bottom:0.5rem;"><strong>Internet</strong> — required for Protected QR creation and opening (Verification Backend), and by the Ad SDK in the free tier.</li>
+    </ul>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">4. App Lock</h2>
+
+    <p>App lock is a local, device-at-rest protection feature. Your PIN or biometric unlock is processed entirely on-device by the operating system. No unlock material, password verifier, or wrapped secret is ever transmitted to our servers or any third party. App lock does not provide account recovery — if you forget your PIN and have no biometric fallback, local protected data cannot be recovered.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">5. Third-Party Services</h2>
+
+    <p><strong>Google Play Integrity API / Apple App Attest</strong> — used to verify the authenticity of the App and device before allowing Protected QR operations. Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> / <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+
+    <p><strong>Google Firebase Analytics &amp; Crashlytics</strong> — collects anonymized usage and crash data to help us improve the App. Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <p><strong>Google AdMob</strong> — serves ads in the free version of the App and may collect device identifiers and usage data. Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <p><strong>Google Play Billing / Apple App Store</strong> — processes in-app purchases. Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> / <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">6. Data Retention and Deletion</h2>
+
+    <p>Message content and encryption keys are stored locally on your device only. Uninstalling the App removes all locally stored data. We have no copy of this data and cannot delete or recover it on your behalf.</p>
+
+    <p>Attestation audit records on our Verification Backend are automatically deleted within hours to days. We retain no long-term personal records.</p>
+
+    <p>If you use the panic wipe feature, all app lock state, saved keys, and creator registry data stored locally by the App are immediately and permanently deleted from your device.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">7. Children's Privacy</h2>
+
+    <p>The App is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the App, please contact us and we will take appropriate action.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">8. Your Rights</h2>
+
+    <p>Because we do not collect personally identifying information ourselves, there is no personal profile for us to provide or delete. For data collected by third-party services such as Google AdMob, you can manage your ad preferences through your device settings (Android: <em>Google &rarr; Ads</em>; iOS: <em>Privacy &amp; Security &rarr; Apple Advertising</em>).</p>
+
+    <p>If you are located in the European Economic Area or California, you may have additional rights under GDPR or CCPA. Contact us at the address below to exercise those rights.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">9. Changes to This Policy</h2>
+
+    <p>We may update this policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+
+    <h2 style="font-size:1.25rem;margin:1.5rem 0 0.5rem;">10. Contact</h2>
+
+    <p>If you have questions about this Privacy Policy, please contact us at:<br>
+    <a href="mailto:support@moonsailsoftware.com">support@moonsailsoftware.com</a></p>
+  </main>
+
+  <footer>
+    &copy; 2026 Moonsail Software LLC &mdash; <a href="https://moonsailsoftware.com">moonsailsoftware.com</a>
+  </footer>
+</body>
+</html>
