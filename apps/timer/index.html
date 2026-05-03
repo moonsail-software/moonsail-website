@@ -29,6 +29,8 @@
   <script src="/js/analytics.js" type="module"></script>
 </head>
 <body>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
   <nav class="site-nav">
     <a class="nav-logo" href="/">Moonsail Software</a>
     <div class="nav-links">
@@ -39,8 +41,8 @@
       <a href="/apps/work-tracker">Work Tracker</a>
     </div>
   </nav>
-  <main style="max-width: 1000px;">
-    <section class="hero-section">
+  <main class="hidden-on-scroll" style="max-width: 1000px;">
+    <section class="hero-section hidden-on-scroll">
       <div class="hero-content hidden-on-scroll">
         <h1>Manage your time effortlessly</h1>
         <p class="tagline">Run and monitor multiple simultaneous countdowns with one tap. Say goodbye to complex menus and juggling multiple apps.</p>
@@ -73,15 +75,15 @@
     <section class="faq-section hidden-on-scroll">
       <h2>Frequently Asked Questions</h2>
       <div class="faq-grid">
-        <div class="faq-item">
+        <div class="faq-item hidden-on-scroll">
           <h3>Will the timers stop if I close the app?</h3>
           <p>No. Multi Timer uses a dedicated foreground service to ensure your countdowns keep running and alerts trigger even if you switch apps.</p>
         </div>
-        <div class="faq-item">
+        <div class="faq-item hidden-on-scroll">
           <h3>Is there a limit to how many timers I can run?</h3>
           <p>There is no hard limit—you can run as many simultaneous timers as your screen can comfortably display.</p>
         </div>
-        <div class="faq-item">
+        <div class="faq-item hidden-on-scroll">
           <h3>Does the app have ads?</h3>
           <p>Multi Timer is completely free and focused on a clean, distraction-free experience for managing your time.</p>
         </div>
