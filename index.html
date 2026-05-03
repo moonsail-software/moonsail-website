@@ -12,6 +12,8 @@
   <script src="/js/analytics.js" type="module"></script>
 </head>
 <body>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
   <nav class="site-nav">
     <a class="nav-logo" href="/">Moonsail Software</a>
     <div class="nav-links">
@@ -22,37 +24,86 @@
       <a href="/apps/work-tracker">Work Tracker</a>
     </div>
   </nav>
-  <main style="text-align: center;">
-    <div class="hidden-on-scroll logo-container">
-      <img src="img/moonsail-logo.png" alt="Moonsail Software Logo" style="width: min(520px, 90vw); height: auto; display: block; margin: 0 auto;">
+  <main>
+    <div class="hidden-on-scroll main-logo-container">
+      <img src="img/moonsail-logo.png" alt="Moonsail Software Logo" class="main-logo">
     </div>
-    <p class="hidden-on-scroll">Small, focused Android utilities. No fluff, no subscriptions.</p>
+
+    <section class="hero-container hidden-on-scroll">
+      <div class="hero-content">
+        <h1>Eye Break: 20-20-20 Rule</h1>
+        <p class="tagline">Protect your vision from digital eye strain. Automatic reminders, guided breaks, and eye health tracking.</p>
+        <div class="hero-ctas">
+          <a href="https://play.google.com/store/apps/details?id=com.moonsailsoftware.eyebreak" class="btn-store">Download on Play Store</a>
+          <a href="/apps/eye-break" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <img src="apps/eye-break/progress-screen.png" alt="Eye Break App Screenshot">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-header hidden-on-scroll">
+      <h2 class="display-title">Our Apps</h2>
+      <p>Focused tools for your daily routine.</p>
+    </div>
 
     <div class="app-grid">
-      <a class="app-card hidden-on-scroll" href="/apps/mix" data-accent="amber">
-        <h2>Mix – Concrete Calculator</h2>
-        <p>Concrete mix calculator — slabs, steps, footings, columns. Bags &amp; volume.</p>
-      </a>
-      <a class="app-card hidden-on-scroll" href="/apps/timer" data-accent="emerald">
-        <h2>Multi Timer – Fast Countdowns</h2>
-        <p>Run and monitor multiple simultaneous countdowns with one tap. Fast, simple, and free.</p>
-      </a>
-      <a class="app-card hidden-on-scroll" href="/apps/eye-break" data-accent="sky">
-        <h2>20-20-20: Eye Break Reminder</h2>
-        <p>Protect your eyes with automatic 20-20-20 rule reminders, active hours, and guided break countdowns.</p>
-      </a>
-      <a class="app-card hidden-on-scroll" href="/apps/bp-log" data-accent="rose">
-        <h2>BP Log: Easy Blood Pressure</h2>
-        <p>Log blood pressure readings with a tactile wheel, get instant AHA classifications, and track trends with charts. Coming soon.</p>
-      </a>
       <a class="app-card hidden-on-scroll" href="/apps/work-tracker" data-accent="mint">
-        <h2>Work Hours Tracker: Time Clock</h2>
-        <p>Time clock and mileage tracker for gig workers. See your real hourly rate after gas. Coming soon.</p>
+        <div class="card-visual">
+          <img src="apps/work-tracker/1.png" alt="Work Hours Tracker Screenshot" class="card-screenshot">
+        </div>
+        <div class="card-info">
+          <h2>Work Hours Tracker: Time Clock</h2>
+          <p>Time clock and mileage tracker for gig workers. See your real hourly rate after gas.</p>
+        </div>
+      </a>
+
+      <a class="app-card hidden-on-scroll" href="/apps/bp-log" data-accent="rose">
+        <div class="card-visual">
+          <img src="apps/bp-log/screenshot-1.png" alt="BP Log Screenshot" class="card-screenshot">
+        </div>
+        <div class="card-info">
+          <h2>BP Log: Easy Blood Pressure</h2>
+          <p>Log blood pressure readings with a tactile wheel, get instant AHA classifications, and track trends.</p>
+        </div>
+      </a>
+
+      <a class="app-card hidden-on-scroll" href="/apps/eye-break" data-accent="sky">
+        <div class="card-visual">
+          <img src="apps/eye-break/screenshot-1.png" alt="Eye Break Screenshot" class="card-screenshot">
+        </div>
+        <div class="card-info">
+          <h2>20-20-20: Eye Break Reminder</h2>
+          <p>Protect your eyes with automatic 20-20-20 rule reminders, active hours, and guided break countdowns.</p>
+        </div>
+      </a>
+
+      <a class="app-card hidden-on-scroll" href="/apps/timer" data-accent="emerald">
+        <div class="card-visual">
+          <img src="apps/timer/screenshot.png" alt="Multi Timer Screenshot" class="card-screenshot">
+        </div>
+        <div class="card-info">
+          <h2>Multi Timer – Fast Countdowns</h2>
+          <p>Run and monitor multiple simultaneous countdowns with one tap. Fast, simple, and free.</p>
+        </div>
+      </a>
+
+      <a class="app-card hidden-on-scroll" href="/apps/mix" data-accent="amber">
+        <div class="card-visual">
+          <img src="apps/mix/screenshot.png" alt="Mix Screenshot" class="card-screenshot">
+        </div>
+        <div class="card-info">
+          <h2>Mix – Concrete Calculator</h2>
+          <p>Concrete mix calculator — slabs, steps, footings, columns. Bags &amp; volume.</p>
+        </div>
       </a>
     </div>
 
-    <p class="hidden-on-scroll" style="margin-top: 2.5rem;">
-      <a href="/apps/eye-break/why-the-20-20-20-rule-works">Read our guide to the 20-20-20 rule for computer eye strain</a>
+    <p class="hidden-on-scroll" style="margin-top: 4rem; text-align: center;">
+      <a href="/apps/eye-break/why-the-20-20-20-rule-works" class="guide-link">Read our guide to the 20-20-20 rule for computer eye strain →</a>
     </p>
 
   </main>
